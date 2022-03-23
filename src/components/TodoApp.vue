@@ -94,10 +94,10 @@ export default {
         {
             // console.log(this.availabeStatus.indexof(this.tasks[index].status))
          let newindex= this.availabeStatus.indexOf(this.tasks[index].status);
-         console.log(newindex)
-        //  if (++newindex>2) newindex =0;
+        //  console.log(newindex)
+         if (++newindex>2) newindex =0;
 
-        //  this.tasks[index].status= this.availabeStatus[newindex];
+         this.tasks[index].status= this.availabeStatus[newindex];
         }
     }
 }
